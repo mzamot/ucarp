@@ -1,0 +1,4 @@
+---
+  - name: restart network
+    command: bash -c "ifdown {{ item }} && ifup {{ item }}"
+    with_items: interfaces

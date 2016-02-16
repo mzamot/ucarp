@@ -1,0 +1,10 @@
+---
+  - name: install ucarp
+    apt: name={{item}} state=present update_cache=yes
+    with_items:
+      - ucarp
+
+  - name: configure ucarp network
+    template: src=ucarp.j2 dest=/etc/network/interfaces mode=0644
+    notify:
+      - restart network

@@ -1,0 +1,4 @@
+---
+  node_ip: 172.16.0.110
+  ucarp_master: yes
+  ucarp_advskew: 1

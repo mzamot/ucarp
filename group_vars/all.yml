@@ -1,0 +1,9 @@
+---
+  ucarp_interface: eth1
+  ucarp_vip: 172.16.0.100
+  ucarp_netmask: 255.255.255.0
+  ucarp_vid: 1
+  ucarp_password: ayylmao
+  ucarp_advbase: 1
+  # skew goes into host_vars
+  # Master is defined with a default to no.
